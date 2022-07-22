@@ -1,9 +1,21 @@
-function App() {
-  return (
-    <div>
+   import {Route, Switch} from 'react-router-dom';
+   function App() {
+      return (
+        <Switch>
+          <Route path='/quotes'>
 
-    </div>
-  );
-}
+          </Route>
 
-export default App;
+          <Route path = '/quotes/:quoteID'>
+
+          </Route>
+
+          <Route path=' /new-quote'>
+
+          </Route>
+
+        </Switch>
+      );
+    }
+
+    export default App;
