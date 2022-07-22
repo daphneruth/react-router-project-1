@@ -5,11 +5,11 @@
    function App() {
       return (
         <Switch>
-          <Route path='/quotes'>
+          <Route path='/quotes' exact>
           <AllQuote/>
           </Route>
 
-          <Route path = '/quotes/:quoteID'>
+          <Route path = '/quotes/:quoteId'>
             <QuoteDetails/>
 
           </Route>
