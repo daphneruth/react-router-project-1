@@ -1,6 +1,6 @@
    import {Route,Switch ,Redirect} from 'react-router-dom';
    import AllQuote from './pages/AllQuotes';
-   import NewQuote from './pages/NewQuote';
+   
    import QuoteDetails from './pages/QuoteDetails';
    import Layout from './components/layout/Layout';
 
