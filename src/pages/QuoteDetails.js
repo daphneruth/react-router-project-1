@@ -20,7 +20,7 @@
     const QuoteDetails = ()=>{
         const params = useParams();
 
-        const quote = DUMMY_QUOTES.find((quote)=>quoteId===params.quoteId)
+        const quote = DUMMY_QUOTES.find((quote)=> quote.id===params.quoteId)
 
         if (!quote){
             return <p>No found Quote</p>
