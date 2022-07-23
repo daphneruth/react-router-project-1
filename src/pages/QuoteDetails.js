@@ -22,11 +22,15 @@
 
         const quote = DUMMY_QUOTES.find((quote)=>quoteId===params.quoteId)
 
+        if (!quote){
+            return <p>No found Quote</p>
+        }
+
        return <Fragment>
-       < h1>Quote details</h1>
-       <p>{params.quoteId}</p>
+       
+       <HighlightedQuote text={quote.text} author={quote.author}/>
        <Route path ='quotes/:quoteId/Comments'>
-        
+        <Comments/>
        </Route>
        </Fragment>
     }
