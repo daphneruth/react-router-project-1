@@ -3,7 +3,7 @@
    import NewQuote from './pages/NewQuote';
    import QuoteDetails from './pages/QuoteDetails';
    import Layout from './components/layout/Layout';
-//mport { Redirect } from 'react-router-dom';
+
    function App() {
       return (
         <Layout>
