@@ -12,6 +12,7 @@ const DUMMY_QUOTES = [
     },
 ]
 const AllQuote = ()=>{
-    <h1>All quotes page</h1>
+    return
+    <QuoteList quotes= {DUMMY_QUOTES}/>
 }
 export default AllQuote;
