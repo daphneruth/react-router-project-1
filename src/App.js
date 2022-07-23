@@ -1,6 +1,6 @@
+   import React, { Suspense } from 'react';
    import {Route,Switch ,Redirect} from 'react-router-dom';
    import AllQuote from './pages/AllQuotes';
-   
    import QuoteDetails from './pages/QuoteDetails';
    import Layout from './components/layout/Layout';
 
@@ -9,6 +9,7 @@
    function App() {
       return (
         <Layout>
+          <Suspense>
         <Switch>
           <Route path ='/' >
             <Redirect to ='/quotes'/>
@@ -28,6 +29,7 @@
           </Route>
 
         </Switch>
+        </Suspense>
         </Layout>
       );
     }
