@@ -20,7 +20,7 @@
     const QuoteDetails = ()=>{
         const params = useParams();
 
-        
+        const quote = DUMMY_QUOTES.find((quote)=>quoteId===params.quoteId)
 
        return <Fragment>
        < h1>Quote details</h1>
