@@ -1,7 +1,9 @@
 import { NavLink } from "react-router-dom";
+
 import classes from './MainNavigation.module.css';
+
 const MainNavigation = ()=>{
-return 
+return (
 <header  className={classes.header}>
     <div className={classes.logo}>
         <nav className={classes.nav}>
@@ -20,6 +22,7 @@ return
         </nav>
     </div>
 </header>
+)
 
 }
 export default MainNavigation;

@@ -4,8 +4,9 @@
         {console.log(quoteData)
         }
     
-        return
+        return(
         <QuoteForm onAddQuote={addQuoteHandler}/>
+        )
     }
 
     export default NewQuote;
