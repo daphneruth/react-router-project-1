@@ -4,8 +4,9 @@
    import QuoteDetails from './pages/QuoteDetails';
    import Layout from './components/layout/Layout';
    import LoadingSpinner from './components/UI/LoadingSpinner'
+   import NewQuote from './pages/NewQuote';
 
-  const NewQuote = React.lazy(()=> import('/pages/Newquote'));
+  
 
    function App() {
       return (
