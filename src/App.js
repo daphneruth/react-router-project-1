@@ -3,13 +3,16 @@
    import AllQuote from './pages/AllQuotes';
    import QuoteDetails from './pages/QuoteDetails';
    import Layout from './components/layout/Layout';
+   import LoadingSpinner from './components/UI/LoadingSpinner'
 
   const NewQuote = React.lazy(()=> import('/pages/Newquote'));
 
    function App() {
       return (
         <Layout>
-          <Suspense>
+          <Suspense
+          fallback='centered'>
+            <LoadingSpinner/>
         <Switch>
           <Route path ='/' >
             <Redirect to ='/quotes'/>
