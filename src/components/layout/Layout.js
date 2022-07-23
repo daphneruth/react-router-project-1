@@ -4,8 +4,8 @@ import MainNavigation from "./MainNavigation";
 const Layout =(props)=>{
     return
     <Fragment>
-        <main>
-
+        <main className={classes.main}>
+         {props.children}
         </main>
     </Fragment>
 
